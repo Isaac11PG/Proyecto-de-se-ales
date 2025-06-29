@@ -439,21 +439,31 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="feature-card" onclick="navigateToSection('motivacion')">
-                                <div class="feature-icon">
-                                    <i class="fas fa-quote-left"></i>
+                            <div class="feature-card" onclick="window.location.href='juegos.html'">
+                                <div class="feature-icon" style="background: linear-gradient(45deg, #a8d8ea, #c7b8ea);">
+                                    <i class="fas fa-gamepad"></i> <!-- Icono de gamepad -->
                                 </div>
-                                <h3>Motivación diaria</h3>
-                                <p>Frases inspiradoras y reflexiones que te acompañen en tu camino hacia el bienestar emocional.</p>
+                                <h3>Juega y Respira</h3>
+                                <p><small>Diversión consciente</small><br>Descubre juegos simples diseñados para reducir el estrés y mejorar tu atención plena a través de la interacción lúdica.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="feature-card" onclick="navigateToSection('comunidad')">
-                                <div class="feature-icon">
-                                    <i class="fas fa-users"></i>
+                            <div class="feature-card" onclick="window.location.href='altruista.html'">
+                                <div class="feature-icon" style="background: linear-gradient(45deg, #FFB6C1, #FFD700);">
+                                    <i class="fas fa-hands-helping"></i> <!-- Icono de manos ayudando -->
                                 </div>
-                                <h3>Comunidad de apoyo</h3>
-                                <p>Conecta con otras personas en un espacio seguro para compartir experiencias y encontrar comprensión.</p>
+                                <h3>Altruista</h3>
+                                <p><small>Pequeños actos, grandes cambios</small><br>Descubre cómo ayudar a otros mejora tu bienestar emocional con acciones simples.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="feature-card" onclick="window.location.href='gratitud.html'">
+                                <div class="feature-icon" style="background: linear-gradient(45deg, #FFD700, #FFB347);">
+                                    <i class="fas fa-feather-alt"></i> <!-- Icono de pluma -->
+                                </div>
+                                <h3>Hoy agradezco</h3>
+                                <p><small>Cultiva bienestar desde lo pequeño</small><br>Escribe sobre lo bueno de tu día y fortalece tu perspectiva positiva.</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -518,9 +528,14 @@
 
         // Función para navegar a secciones (placeholder para futuras funcionalidades)
         function navigateToSection(section) {
+        if (section === 'test') {
+            // Redirigir a test.html cuando la sección es 'test'
+            window.location.href = 'test.html';
+        } else {
+            // Comportamiento actual para otras secciones
             console.log(`Navegando a la sección: ${section}`);
-            // Aquí puedes agregar la lógica de navegación cuando implementes las páginas
             alert(`Próximamente: Sección "${section}"`);
+        }
         }
 
         // Mostrar frase aleatoria al cargar la página
